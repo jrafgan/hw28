@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		var select = parseInt(prompt('Choose multiply test level: \n For Easy - press button 1 \n For Middle - press button 2 \n For Hard - press button 3 \n For All levels - press button 4 \n To quit the test - press Cancel'))
+
+switch (select) {
+    case 1:
+        i = 2;
+        j = 2;
+        corr = 0;
+        wronFor2 = 0;
+        wronFor3 = 0;
+        counterQuestion = 0;
+        while (true) {
+            var num = prompt(' How much is ' + j + ' * ' + i + '=' + ' ?');
+            var num1 = parseInt(num);
+            counterQuestion++;
+
+            if (num1 === j * i) {
+                corr++;
+                i++;
+                console.log(num + ' Correct ' + corr);
+            } else if (num != null || num === '') {
+                if (j === 3) {
+                    wronFor3++;
+                }
+                wronFor2++;
+                alert('Please try again!');
+
+            } else if (num === null) {
+                counterQuestion -= 1;
+                alert('Total questions: ' + counterQuestion + '\n Correct answers: ' + corr + '\n Wrong answers: ' + '\n Wrong for 2 = ' + wronFor2 + '\n Wrong for 3 = ' + wronFor3);
+                console.log(num1 + ' Wrong for 2 = ' + wronFor2 + ' Wrong for 3 = ' + wronFor3);
+                break;
+            }
+            if (i > 9) {
+                j = 3;
+                i = 2;
+            }
+        }
+    case 2:
+        i = 2;
+        j = 4;
+        corr = 0;
+        wronFor4 = 0;
+        wronFor5 = 0;
+        wronFor6 = 0;
+        counterQuestion = 0;
+        while (true) {
+            var num = prompt(' How much is ' + j + ' * ' + i + '=' + ' ?');
+            var num1 = parseInt(num);
+            counterQuestion++;
+            if (num1 === j * i) {
+                corr++;
+                i++;
+                console.log(num + ' Correct ' + corr);
+            } else if (num != null || num === '') {
+                if (j === 5) {
+                    wronFor5++;
+                }
+                if (j === 6) {
+                    wronFor6++;
+                }
+                wronFor4++;
+                alert('Please try again!');
+            } else if (num === null) {
+                counterQuestion -= 1;
+                alert('Total questions: ' + counterQuestion + '\n Correct answers: ' + corr + '\n Wrong answers: ' + '\n Wrong for 4 = ' + wronFor4 + '\n Wrong for 5 = ' + wronFor5 + '\n Wrong for 6 = ' + wronFor6);
+                console.log(num1 + ' Wrong for 4 = ' + wronFor4 + ' Wrong for 5 = ' + wronFor5 + '\n Wrong for 6 = ' + wronFor6);
+                break;
+            }
+            if (counterQuestion === 8) {
+                j = 5;
+                i = 2;
+            }
+            if (counterQuestion === 16) {
+                j = 6;
+                i = 2;
+            }
+        }
+    case 3:
+        i = 2;
+        j = 7;
+        corr = 0;
+        wronFor7 = 0;
+        wronFor8 = 0;
+        wronFor9 = 0;
+        counterQuestion = 0;
+        while (true) {
+            var num = prompt(' How much is ' + j + ' * ' + i + '=' + ' ?');
+            var num1 = parseInt(num);
+            counterQuestion++;
+            if (num1 === j * i) {
+                corr++;
+                i++;
+                console.log(num + ' Correct ' + corr);
+            } else if (num != null || num === '') {
+                if (j === 8) {
+                    wronFor8++;
+                }
+                if (j === 9) {
+                    wronFor9++;
+                }
+                wronFor7++;
+                alert('Please try again!');
+            } else if (num === null) {
+                counterQuestion -= 1;
+                alert('Total questions: ' + counterQuestion + '\n Correct answers: ' + corr + '\n Wrong answers: ' + '\n Wrong for 7 = ' + wronFor7 + '\n Wrong for 8 = ' + wronFor8 + '\n Wrong for 9 = ' + wronFor9);
+                console.log(num1 + ' Wrong for 7 = ' + wronFor7 + ' Wrong for 8 = ' + wronFor8 + '\n Wrong for 9 = ' + wronFor9);
+                break;
+            }
+            if (counterQuestion === 8) {
+                j = 8;
+                i = 2;
+            }
+            if (counterQuestion === 16) {
+                j = 9;
+                i = 2;
+            }
+        }
+    case 4:
+        i = 2;
+        j = 2;
+        corr = 0;
+        wronFor2 = 0;
+        wronFor3 = 0;
+        wronFor4 = 0;
+        wronFor5 = 0;
+        wronFor6 = 0;
+        wronFor7 = 0;
+        wronFor8 = 0;
+        wronFor9 = 0;
+        counterQuestion = 0;
+        while (true) {
+            var num = prompt(' How much is ' + j + ' * ' + i + '=' + ' ?');
+            var num1 = parseInt(num);
+            counterQuestion++;
+            if (num1 === j * i) {
+                corr++;
+                i++;
+                console.log(num + ' Correct ' + corr);
+            } else if (num != null || num === '') {
+                if (j === 3) {
+                    wronFor3++;
+                }
+                if (j === 4) {
+                    wronFor4++;
+                }
+                if (j === 5) {
+                    wronFor5++;
+                }
+                if (j === 6) {
+                    wronFor6++;
+                }
+                if (j === 7) {
+                    wronFor7++;
+                }
+                if (j === 8) {
+                    wronFor8++;
+                }
+                if (j === 9) {
+                    wronFor9++;
+                }
+                wronFor2++;
+                alert('Please try again!');
+            } else if (num === null) {
+                counterQuestion -= 1;
+                alert('Total questions: ' + counterQuestion + '\n Correct answers: ' + corr + '\n Wrong answers: ' + '\n Wrong for 2 = ' + wronFor2 + '\n Wrong for 3 = ' + wronFor3 + '\n Wrong for 4 = ' + wronFor4 + '\n Wrong for 5 = ' + wronFor5 + '\n Wrong for 6 = ' + wronFor6 + '\n Wrong for 7 = ' + wronFor7 + '\n Wrong for 8 = ' + wronFor8 + '\n Wrong for 9 = ' + wronFor9);
+                console.log(num1 + ' Wrong for 2 = ' + wronFor2 + ' Wrong for 3 = ' + wronFor3 + '\n Wrong for 4 = ' + wronFor4 + '\n Wrong for 5 = ' + wronFor5 + '\n Wrong for 6 = ' + wronFor6 + '\n Wrong for 7 = ' + wronFor7 + '\n Wrong for 8 = ' + wronFor8 + '\n Wrong for 9 = ' + wronFor9);
+                break;
+            }
+            if (counterQuestion === 8) {
+                j = 3;
+                i = 2;
+            }
+            if (counterQuestion === 16) {
+                j = 4;
+                i = 2;
+            }
+            if (counterQuestion === 24) {
+                j = 5;
+                i = 2;
+            }
+            if (counterQuestion === 32) {
+                j = 6;
+                i = 2;
+            }
+            if (counterQuestion === 40) {
+                j = 7;
+                i = 2;
+            }
+            if (counterQuestion === 48) {
+                j = 8;
+                i = 2;
+            }
+            if (counterQuestion === 56) {
+                j = 9;
+                i = 2;
+            }
+
+        }
+}
+
+</script>
+</body>
+</html>

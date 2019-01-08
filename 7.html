@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		var numbers9 = [];
+		var numbers19 = [];
+		var numbers29 = [];
+		var numbers39 = [];
+		var numbers49 = [];
+		var numbers59 = [];
+		var numbers69 = [];
+		var numbers79 = [];
+		var numbers89 = [];
+		var numbers99 = [];
+		i = 0;
+
+		while (true) {
+			var a = Math.random()*100;
+			a = Math.round(a);	
+			console.log('a = ' + a + ' ' + i);
+			i++;
+			var len9 = numbers9.length;
+			var len19 = numbers19.length;
+			var len29 = numbers29.length;
+			var len39 = numbers39.length;
+			var len49 = numbers49.length;
+			var len59 = numbers59.length;
+			var len69 = numbers69.length;
+			var len79 = numbers79.length;
+			var len89 = numbers89.length;
+			var len99 = numbers99.length;
+
+			if (a <= 9 && a >= 0) {
+				var numbers9 = [];
+				numbers9.push(a);	
+			}
+			if (a <= 19 && a >= 10) {
+				numbers19.push(a);
+			}
+			if (a <= 29 && a >= 20) {
+				numbers29.push(a);
+			}
+			if (a <= 39 && a >= 30) {
+				numbers39.push(a);	
+			}
+			if (a <= 49 && a >= 40) {
+				numbers49.push(a);	
+			}
+			if (a <= 59 && a >= 50) {
+				numbers59.push(a);	
+			}
+			if (a <= 69 && a >= 60) {
+				numbers69.push(a);	
+			}
+			if (a <= 79 && a >= 70) {
+				numbers79.push(a);	
+			}
+			if (a <= 89 && a >= 80) {
+				numbers89.push(a);	
+			}
+			if (a <= 99 && a >= 90) {
+				numbers99.push(a);
+			} 
+			if (i === 100000) {
+				console.log('Group 0-9 : ' + len9 + '\n Group 10-19 : ' + len19 + '\n Group 20-29 : ' + len29 + '\n Group 30-39 : ' + len39 + '\n Group 40-49 : ' + len49 + '\n Group 50-59 : ' + len59 + '\n Group 60-69 : ' + len69 + '\n Group 70-79 : ' + len79 + '\n Group 80-89 : ' + len89 + '\n Group 90-99 : ' + len99 + '\n What is inside numbers9 : ' + numbers9 + '\n What is inside numbers19 : ' + numbers19 + '\n What is inside numbers29 : ' + numbers29 + '\n What is inside numbers39 : ' + numbers39 + '\n What is inside numbers49 : ' + numbers49 + '\n What is inside numbers59 : ' + numbers59 + '\n What is inside numbers69 : ' + numbers69 + '\n What is inside numbers79 : ' + numbers79 + '\n What is inside numbers89 : ' + numbers89 + '\n What is inside numbers99 : ' + numbers99);
+
+				alert('Number of Samples : 100000' + '\n Group 0-9 : ' + len9 + '\n Group 10-19 : ' + len19 + '\n Group 20-29 : ' + len29 + '\n Group 30-39 : ' + len39 + '\n Group 40-49 : ' + len49 + '\n Group 50-59 : ' + len59 + '\n Group 60-69 : ' + len69 + '\n Group 70-79 : ' + len79 + '\n Group 80-89 : ' + len89 + '\n Group 90-99 : ' + len99);
+				break;
+			}
+		}
+		
+	</script>
+</body>
+</html>

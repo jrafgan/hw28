@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		var number1 = parseInt(prompt( 'Enter first point (x).'));
+		var number2 = parseInt(prompt('Enter second point (y).'));
+		var border = {
+			x : 12,
+			y : 6
+		};
+		if (number1 > border.x && number2 > border.y) {
+			alert('You home in NE');
+		} else if (number1 < border.x && number2 > border.y) {
+			alert('Your home in NW');
+		}  else if (number1 < border.x && number2 < border.y) {
+			alert('Your home in SW');
+		} else if (number1 > border.x && number2 < border.y) {
+			alert('Your home in SE');
+		} else if (number1 === border.x || number2 === border.y) {
+			alert('border')
+		} else {
+			alert('Wrong coordinate!');
+		}
+
+	</script>
+</body>
+</html>
