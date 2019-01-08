@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		var i = 0;
+		var sum = 0;
+		while (true) {
+			var num = prompt('Enter any number from 1 to 100, please.');
+			num1 = parseInt(num);
+			if (num !== null && num1 > 0 && num1 < 101) {
+				sum += num1;
+				i++;
+			} else if (num === null) {
+				alert('Your average number of all = ' + sum/i);
+				break;
+			} else {
+				alert('Try again');
+			}
+		}
+
+	</script>
+</body>
+</html>
